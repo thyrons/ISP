@@ -1,0 +1,220 @@
+<div class="main-content">	
+	<div class="main-content-inner">
+	    <div class="breadcrumbs" id="breadcrumbs">
+			<script type="text/javascript">
+				try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+			</script>
+
+			<ul class="breadcrumb">
+				<li>
+					<i class="ace-icon fa fa-home home-icon"></i>
+					<a href="#/">Inicio</a>
+				</li>
+				
+				<li class="active">Clientes</li>
+				<li class="active">Nuevo Cliente</li>
+			</ul>
+
+			<div class="nav-search" id="nav-search">
+				
+			</div>
+		</div>
+
+	    <div class="page-content">
+			<div class="row">
+				<div class="col-sm-12">
+					<form class="form-horizontal" name="form_cliente" id="form_cliente" enctype = "multipart/form-data">
+						<div class="row">
+							<div class="widget-box">
+								<div class="widget-body">
+									<div class="widget-header">
+										<h4 class="widget-title">Información Básica</h4>
+									</div>
+
+									<div class="widget-main">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="col-sm-6">	
+												<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Identificación:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="text" name="txt_1" id="txt_1" placeholder="" tabindex="1" class="form-control" onkeyup="this.value = this.value.toUpperCase();" />																
+															</div>
+														</div>
+													</div>		
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Nombres:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="text" name="txt_2" id="txt_2" placeholder="" tabindex="2" class="form-control" onkeyup="this.value = this.value.toUpperCase();" />
+																<input type="hidden" name="txt_id" id="txt_id" placeholder="" class="form-control"/>	
+															</div>
+														</div>
+													</div>		
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Apellidos:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="text" name="txt_3" id="txt_3" placeholder="" class="form-control" tabindex="3" onkeyup="this.value = this.value.toUpperCase();" />																
+															</div>
+														</div>
+													</div>													
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Dirección:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="text" name="txt_4" id="txt_4" placeholder="" tabindex="4" class="form-control" onkeyup="this.value = this.value.toUpperCase();" />																
+															</div>
+														</div>
+													</div>	
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Teléfono:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="text" name="txt_5" tabindex="5" id="txt_5" placeholder="" class="form-control"  />
+															</div>
+														</div>
+													</div>											
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Referencia:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<textarea type="text" name="txt_6" tabindex="6" cols="10" rows="5" id="txt_6" placeholder="" class="form-control" onkeyup="this.value = this.value.toUpperCase();"></textarea>
+															</div>
+														</div>
+													</div>	
+												</div>
+
+												<div class="col-sm-6">
+														
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Correo:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="email" name="txt_7" tabindex="7" id="txt_7" placeholder="" class="form-control"  />																
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Género:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<select id="select_genero" name="select_genero" tabindex="8" class="select2" data-placeholder="Seleccione...">
+																	<option value="">&nbsp;</option>
+																	<option value="1">Masculino</option>
+																	<option value="2">Femenino</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Fecha Nacimiento:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="text" name="txt_8" tabindex="9" id="txt_8" placeholder="" class="form-control"  />
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Edad:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="text" name="txt_9" readonly="" tabindex="10" id="txt_9" placeholder="" value="0" class="form-control"  />
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="control-label col-xs-12 col-sm-4 no-padding-right">Celular:</label>
+														<div class="col-xs-12 col-sm-6">
+															<div class="clearfix">
+																<input type="text" name="txt_10" tabindex="11" id="txt_10" placeholder="" class="form-control"  />
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-12">
+															<div class="kv-avatar center-block" style="width:150px">
+											        			<input id="avatar-2" name="avatar-2" type="file" class="file-loading">
+											        		</div>
+											    		</div>
+													</div>
+												</div>												
+											</div>
+										</div>
+
+										<div class="row">
+											
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="clearfix form-actions">
+													<div class="col-md-offset-3 col-md-9">
+														<button type="button" class="btn btn-primary" name="btn_0" id="btn_0" data-toggle='tooltip' title = 'Registrar usuario'>
+															<i class="ace-icon fa fa-save bigger-110"></i>
+															Guardar
+														</button>
+
+														&nbsp; &nbsp;
+														<button type="button" class="btn btn-primary" name="btn_3" id="btn_3" data-toggle='tooltip' title = 'Modificar usuario'>
+															<i class="ace-icon fa fa-pencil-square-o bigger-110"></i>
+															Modificar
+														</button>
+
+														&nbsp; &nbsp;
+														<button type="button" class="btn btn-primary" name="btn_2" id="btn_2" data-toggle='tooltip' title = 'Buscar usuario'>
+															<i class="ace-icon fa fa-search bigger-110"></i>
+															Buscar
+														</button>
+
+														&nbsp; &nbsp;
+														<button type="button" class="btn btn-primary" name="btn_1" id="btn_1" data-toggle='tooltip' title = 'Limpiar'>
+															<i class="ace-icon fa fa-refresh bigger-110"></i>
+															Actualizar
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">BUSCAR USUARIOS</h4>
+        </div>
+        <div class="modal-body">
+            <table id="table"></table>
+			<div id="pager"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal" data-toggle="tooltip" title="Cerrar ventana">Cerrar</button>
+        </div>
+      </div>
+    </div>
+</div>
+<style type="text/css">
+.kv-avatar .file-preview-frame,.kv-avatar .file-preview-frame:hover {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.kv-avatar .file-input {
+    display: table-cell;
+    max-width: 170px;
+    max-height: 170px;
+}
+</style>

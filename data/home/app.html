@@ -1,0 +1,58 @@
+<div class="main-content">
+	<div class="main-content-inner">
+		<div class="breadcrumbs" id="breadcrumbs">
+			<script type="text/javascript">
+				try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+			</script>
+
+			<ul class="breadcrumb">
+				<li>
+					<i class="ace-icon fa fa-home home-icon"></i>
+					<a href="#">Inicio</a>
+				</li>
+				<li class="active">Dashboard</li>
+			</ul><!-- /.breadcrumb -->						
+		</div>
+
+		<div class="page-content">
+			<div class="row">
+				<div class="col-xs-12">														
+					<form class="form-horizontal" name="form_gestion" id="form_gestion" enctype = "multipart/form-data">
+						<div class="row">
+							<div class="widget-box">
+								<div class="widget-body">
+									<div class="widget-header">
+										<h4 class="widget-title">Gestion Mikrotik</h4>
+									</div>
+									<div class="widget-main">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="modal-body" id="estadistico">	          																	        	
+										        	<div id="container" ></div>
+													<input name="interface" id="interface" type="hidden" value="rb_inalambricos" />
+													<div id="trafico"></div>
+										        </div>
+											</div>
+											<div class="col-xs-12">
+												<table id="tabla_mikro" class="table table-striped table-bordered table-hover">
+													<thead>
+														<tr>													
+															<th>Caraterística</th>
+															<th>Propiedades</th>
+														</tr>
+													</thead>
+													<tbody>												
+													</tbody>
+												</table>
+											</div><!-- /.span -->											
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.page-content -->
+	</div>
+</div><!-- /.main-content -->
